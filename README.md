@@ -23,7 +23,7 @@ Ports used in the project:
    cp source/.env.example source/.env
    ```
 
-3. Build the project whit the next commands:
+3. Build the project with the next commands:
 
    ```sh
    docker-compose up --build

@@ -1,4 +1,4 @@
-# To-do planning app
+# Champions League
 
 Ports used in the project:
 | Software | Port |

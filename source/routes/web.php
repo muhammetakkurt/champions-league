@@ -14,4 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'getIndex']);
+Route::get('/{path?}', [HomeController::class, 'getIndex'])
+    ->where('path', '.*')
+    ->name('home');

@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {
+    @apply mx-auto pt-3 antialiased flex flex-col justify-center items-start min-h-screen sm:pt-1;
+    width: 700px;
+}
+
+.container{
+    @apply flex flex-col gap-2;
+}
+
+.header{
+    @apply bg-[#33383f] p-4 text-[#fff];
+}
+
+.label{
+    @apply px-2 py-2 border-b border-b-neutral-300 last:border-b-0;
+}
+
+.button{
+    @apply bg-[#35a2b9] text-[#fff] rounded mt-2 px-2 py-2 hover:opacity-80 w-auto;
+}

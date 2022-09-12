@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\API\VersionOne\FixtureController;
 use App\Http\Controllers\API\VersionOne\TeamController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -17,4 +18,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->group(function (){
     Route::get('teams', [TeamController::class, 'getIndex']);
+    Route::get('generate-fixture', [FixtureController::class, 'generateFixture']);
 });
+

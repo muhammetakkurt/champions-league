@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import { useNavigate } from "react-router-dom";
 import Header from './../components/Header.jsx'
 import Label from './../components/Label.jsx'
 import Button from './../components/Button.jsx'
@@ -13,10 +14,8 @@ export default function Teams(){
             setIsLoading(false);
         });
 
-    const generateFixture = () =>
-        axios.get("api/v1/generate-fixture").then((resp) => {
-
-        });
+    const navigate = useNavigate();
+    const generateFixture = () => navigate("/fixtures");
 
     useEffect(() => {
         getTeams();

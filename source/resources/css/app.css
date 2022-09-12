@@ -4,7 +4,7 @@
 
 .wrapper {
     @apply mx-auto pt-3 antialiased flex flex-col justify-center items-start min-h-screen sm:pt-1;
-    width: 700px;
+    width: 70%;
 }
 
 .container{
@@ -15,8 +15,16 @@
     @apply bg-[#33383f] p-4 text-[#fff];
 }
 
+.group-label{
+    @apply flex flex-row justify-center;
+}
+
 .label{
     @apply px-2 py-2 border-b border-b-neutral-300 last:border-b-0;
+}
+
+.grp-label{
+    @apply px-2 py-2 border-b-0 border-0;
 }
 
 .button{

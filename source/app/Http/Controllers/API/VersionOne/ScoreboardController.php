@@ -15,7 +15,6 @@ class ScoreboardController extends Controller
         $scoreBoard = Fixture::select([
             'home_team_id'
         ])->with(['games'])
-            ->withCount(['games as p'])
             ->join('teams', 'fixtures.home_team_id', '=', 'teams.id')
             ->groupBy('home_team_id')
             ->orderBy('teams.name', 'ASC')

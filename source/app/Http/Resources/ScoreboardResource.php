@@ -16,6 +16,7 @@ class ScoreboardResource extends JsonResource
     public function toArray($request)
     {
         $games = $this->games()->get();
+        $totalGames = count($games);
         $goal = 0;
         $goalConceded = 0;
         $win = 0;
@@ -53,7 +54,7 @@ class ScoreboardResource extends JsonResource
 
         return [
             'team' => $this->homeTeam->name,
-            'p' => $this->p,
+            'p' => $totalGames,
             'w' => $win,
             'd' => $drawn,
             'l' => $lose,

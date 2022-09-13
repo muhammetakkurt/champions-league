@@ -48,4 +48,4 @@ Run this: http://localhost:8383/
 
 ![screencapture-localhost-8383-fixtures-2022-09-13-13_58_46](https://user-images.githubusercontent.com/4670039/189884599-a7097753-018c-427d-8e05-4c63dbb65c8a.png)
 
-![screencapture-localhost-8383-simulation-2022-09-13-13_59_08](https://user-images.githubusercontent.com/4670039/189884652-a607e7f1-0122-43a6-8d0a-f80b2fd1b8b4.png)
+![screencapture-localhost-8383-simulation-2022-09-13-14_05_37](https://user-images.githubusercontent.com/4670039/189885639-276d7e1d-3656-4c8c-9f85-f9bebcc77edb.png)

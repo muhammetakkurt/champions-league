@@ -89,7 +89,7 @@ class FixtureService{
         $matches = $this->getMatches();
         if(count($matches) > 0){
             $lastIndexKey = array_key_last($matches);
-            while ($lastIndexKey % 2 === 0 &&
+            while ($away === $home || $lastIndexKey % 2 === 0 &&
                 (in_array($home, $matches[$lastIndexKey]) || in_array($away, $matches[$lastIndexKey]))
             )
             {

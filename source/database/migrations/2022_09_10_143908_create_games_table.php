@@ -25,6 +25,7 @@ return new class extends Migration
                 ->index();
             $table->foreignIdFor(Team::class, 'home_team_id');
             $table->foreignIdFor(Team::class, 'away_team_id');
+            $table->foreignIdFor(Fixture::class, 'fixture_id');
             $table->timestamps();
         });
     }

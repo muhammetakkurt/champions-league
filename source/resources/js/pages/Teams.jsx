@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Header from './../components/Header.jsx'
 import Label from './../components/Label.jsx'
 import Button from './../components/Button.jsx'
+import Loading from "../components/Loading";
 
 export default function Teams(){
     const [isLoading, setIsLoading] = useState(true);
@@ -22,7 +23,7 @@ export default function Teams(){
     }, []);
 
     return(
-        !isLoading && <>
+        isLoading ? <Loading /> : <>
             <div className="container">
                 <span className={"font-thin text-2xl pb-2"}>Tournament Teams</span>
                 <Header name={"Team Name"} />
